@@ -1,0 +1,36 @@
+{
+  "name": "@igoralbuquerque/vibe-git-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for finalizing AI coding tasks through the official vibe-git CLI.",
+  "type": "module",
+  "bin": {
+    "vibe-git-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@igoralbuquerque/vibe-git": "^2.1.0",
+    "@modelcontextprotocol/sdk": "latest",
+    "dotenv": "^17.2.3",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "Igor Costa Lins de Albuquerque"
+}
