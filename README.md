@@ -83,12 +83,12 @@ A tool deve ser chamada com:
   deve apenas executar commit/push sem PR. Por padrão, sempre use `true` para
   criar PRs, a menos que o usuário avise o contrário na tarefa;
 - `requireCleanVibeGitWorkspace`: `true`.
+```
 
 > [!WARNING]
 > Personalize a branch padrão com uma branch existente neste repositório, como
 > `staging` ou `main`. Caso o número da OS não seja informado durante a tarefa,
 > a IA usará a convenção de branch padrão descrita acima.
-```
 
 ### English
 
@@ -115,9 +115,9 @@ Call the tool with:
   when it should only commit and push without a PR. Use `true` by default unless
   the user states otherwise in the task;
 - `requireCleanVibeGitWorkspace`: `true`.
+```
 
 > [!WARNING]
 > Customize the default branch with a branch that exists in this repository,
 > such as `staging` or `main`. If the OS number is not provided during the task,
 > the AI will use the default branch convention described above.
-```
